@@ -14,20 +14,9 @@
                     </span>
                 </p>
                 <div class="game-gauge">
-                    <mwl-gauge
-                        class="two"
-                        [max]="100"
-                        [dialStartAngle]="180"
-                        [dialEndAngle]="0"
-                        [value]="gameRating"
-                        [animated]="true"
-                        [color]="getColor"
-                    ></mwl-gauge>
-                    <a 
-                        href="{{ game.metacritic_url }}"
-                        class="game-gauge-label"
-                        _target="blank"
-                    >metacritic</a>
+                    <mwl-gauge class="two" [max]="100" [dialStartAngle]="180" [dialEndAngle]="0" [value]="gameRating"
+                        [animated]="true" [color]="getColor"></mwl-gauge>
+                    <a href="{{ game.metacritic_url }}" class="game-gauge-label" _target="blank">metacritic</a>
                 </div>
             </div>
             <app-game-tabs [game]="game"></app-game-tabs>

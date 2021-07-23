@@ -43,7 +43,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
       )
   }
 
-  getColor(value: number): string{
+  getColor(value: number): string {
     if (value > 75) {
       return '#5ee432';
     } else if (value > 50) {
